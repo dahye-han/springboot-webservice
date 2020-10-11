@@ -7,7 +7,6 @@ import com.leebe.springboot.web.dto.PostsResponseDto;
 import com.leebe.springboot.web.dto.PostsSaveRequestDto;
 import com.leebe.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
