@@ -1,5 +1,6 @@
 package com.leebe.springboot.domain.user;
 
+
 import com.leebe.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,7 +12,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 public class User extends BaseTimeEntity {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -27,7 +27,7 @@ public class User extends BaseTimeEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Role role;
+    private Role role;  // Role: 직접 만드는 클래스
 
     @Builder
     public User(String name, String email, String picture, Role role) {
